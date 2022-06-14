@@ -10,10 +10,12 @@ body {
 
 h1{
     font-size: calc(50px + 0.390625vw);
+    font-weight: 700;
     color: #75B79E;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
 }
 img {
     margin-left: 10px;
@@ -30,12 +32,15 @@ img {
     display: flex;
     flex-direction: column;
     margin: auto;
+    
 }
 .card_set01, .card_set02 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin-top: 40px;
+   
 }
 
 .card_back {
@@ -45,4 +50,23 @@ img {
     border-radius: 5px;
     border: 1px solid #99CEA8;
         
+}
+
+
+@media (max-width:335px) {
+
+
+    h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .card_set01, .card_set02{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card_back {
+        margin-top: 34px;
+    }
 }

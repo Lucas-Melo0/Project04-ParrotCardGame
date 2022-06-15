@@ -30,6 +30,7 @@ img {
 /* Classes configuration */
 .conteiner {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: auto;
     

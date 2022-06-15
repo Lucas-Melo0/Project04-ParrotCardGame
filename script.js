@@ -11,7 +11,7 @@ function howMany(){
 do { numberCards = prompt("Com quantas cartas deseja jogar?") 
 }   while(numberCards < 4 || numberCards > 14 || numberCards % 2 !== 0);
 }
-insertCards()
+
 function insertCards(){
     cardsInGame = [];
     cardHtml = document.querySelector(".card_set01");
@@ -38,6 +38,15 @@ function insertCards(){
 
 function compare(){
     return Math.random() - 0.5;
+}
+
+function flipCard(element){
+    let cardBack = element.querySelector(".back");
+    let cardFront = element.querySelector(".front");
+    cardBack.classList.add("hidden")
+    cardFront.classList.remove("hidden")
+
+
 }
 
     

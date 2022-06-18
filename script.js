@@ -13,7 +13,7 @@ let image = [ "bobrossparrot","explodyparrot","fiestaparrot","metalparrot","reve
 
 
 // Functions
-howMany();
+
 
 function howMany() {
   do {numberCards = prompt("Com quantas cartas deseja jogar?")
@@ -27,20 +27,21 @@ function howMany() {
      </div>`;
     cardsInGame.push(cardHtml);
     cardsInGame.push(cardHtml);
+    cardsInGame.sort(shuffler);
+    cardInsertion()
   }
 }
-
-cardsInGame.sort(comparador);
-
-function comparador() {
-  return Math.random() - 0.5;
+function cardInsertion (){
+  cardDistribution = document.querySelector(".card_set");
+  cardDistribution.innerHTML = "";
+  for (let i = 0; i < numberCards; i++) {
+    cardDistribution.innerHTML += cardsInGame[i];
+    }
 }
 
-cardDistribution = document.querySelector(".card_set");
-cardDistribution.innerHTML = "";
 
-for (let i = 0; i < numberCards; i++) {
-  cardDistribution.innerHTML += cardsInGame[i];
+function shuffler() {
+  return Math.random() - 0.5;
 }
 
 function toSelectCard(cardHtml) {
@@ -119,6 +120,9 @@ function restartGame() {
     alert("Obrigado por jogar!")
   }
 }
+
+
+howMany();
 
 
 

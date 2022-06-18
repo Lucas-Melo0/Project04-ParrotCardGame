@@ -3,6 +3,7 @@
 }
 /* Tags confis */
 body {
+    
     background-color: #EEF9BF;
     font-family: 'Roboto', sans-serif;
     
@@ -29,13 +30,20 @@ img {
 
 /* Classes configuration */
 
+.conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card_set{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 40px; 
+    margin-top: 40px;
+    width: 80vw; 
 }
 
 .card_back {
@@ -47,7 +55,8 @@ img {
     background-color: #A7E9AF; 
     border-radius: 5px;
     border: 1px solid #99CEA8;
-    cursor: pointer;       
+    cursor: pointer;
+   margin-top: 20px;     
 }
 
 .card_back > img{
@@ -59,7 +68,7 @@ img {
     display: none;
 }
 .timer {
-    width: 150px;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;

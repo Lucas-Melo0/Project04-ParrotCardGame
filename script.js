@@ -15,7 +15,7 @@ let image = [ "bobrossparrot","explodyparrot","fiestaparrot","metalparrot","reve
 // Functions
 
 
-function howMany() {
+function howMany() {                        
   do {numberCards = prompt("Com quantas cartas deseja jogar?")
   } while (numberCards < 4 || numberCards > 14 || numberCards % 2 !== 0);
     
@@ -99,7 +99,7 @@ function differentCards(cardHtml, startCard) {
 function stopWatch() {
   timer = setInterval(function () {
     seconds++;
-    document.querySelector(".timer").innerHTML = `Seu tempo: ${seconds}`;
+    document.querySelector(".timer").innerHTML = `Seu tempo: ${seconds} segundos`;
     if (matches == numberCards) {
       clearInterval(timer);
     }

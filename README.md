@@ -1,8 +1,9 @@
 # Project04-ParrotCardGame
 
 #  About the project
-#### A matchimg game with responsive layout
-#### This is my fourth project at Driven bootcamp
+ A **card matching game** with dynamic and responsive layout<br />          
+ This is my fourth project at Driven bootcamp
+ 
 
 #  Technologies used
 * JavaScript

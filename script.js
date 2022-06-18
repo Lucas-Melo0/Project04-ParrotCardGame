@@ -22,8 +22,8 @@ function howMany() {
   
   for (let i = 0; i < numberCards / 2; i++) {
     cardHtml = `<div class="card_back" onclick="toSelectCard(this)">
-     <img class="front" src="Images/front.png">
-     <img class="back hidden" src="Images/${image[i]}.gif">
+     <img class="front" src="images/front.png">
+     <img class="back hidden" src="images/${image[i]}.gif">
      </div>`;
     cardsInGame.push(cardHtml);
     cardsInGame.push(cardHtml);
